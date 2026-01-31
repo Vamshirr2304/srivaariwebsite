@@ -343,18 +343,18 @@ video::-webkit-media-controls-mute-button {
         height: 45px;
     }
 
-    /* NAVBAR – single line and clean */
+   /* ===== MOBILE NAVBAR (ONE LINE FIX) ===== */
     .navbar {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between; /* IMPORTANT */
         align-items: center;
-        flex-wrap: wrap;      /* prevents cropping */
-        gap: 6px;
-        padding: 10px 5px;
+        padding: 10px 8px;              /* reduced padding */
+        gap: 0;                         /* remove extra gaps */
+        flex-wrap: nowrap;
     }
 
     .navbar a {
-        font-size: 13px;
+        font-size: 13px;                /* slightly smaller */
         white-space: nowrap;
     }
 
@@ -363,13 +363,13 @@ video::-webkit-media-controls-mute-button {
         display: none;
     }
 
-    /* slideshow full width (no black sides) */
     .slideshow {
-        height: auto;
-    }
+    height: auto !important;
+}
 
-    .slide {
-        height: auto;
-        object-fit: cover;
-    }
+.slide {
+    width: 100%;
+    height: auto !important;
+    object-fit: cover;
+}
 }
