@@ -453,18 +453,6 @@ video::-webkit-media-controls-mute-button {
     }
 
     /* keep navbar horizontal */
-   /* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
-
-    .header {
-        padding: 12px 15px;
-    }
-
-    .logo {
-        height: 45px;
-    }
-
-    /* keep navbar horizontal */
     .navbar {
         display: flex;
         flex-direction: row;
@@ -479,18 +467,9 @@ video::-webkit-media-controls-mute-button {
         white-space: nowrap;
     }
 
-    /* hide hamburger (not needed now) */
+    /* hide hamburger */
     .menu-toggle {
         display: none;
     }
 }
-
-    /* hide hamburger (not needed now) */
-    .menu-toggle {
-        display: none;
-    }
 }
-
-
-}
-
