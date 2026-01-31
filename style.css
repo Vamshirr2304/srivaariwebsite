@@ -331,145 +331,45 @@ video::-webkit-media-controls-mute-button {
 
 
 /* ================= MOBILE ONLY ================= */
-
 @media (max-width: 768px) {
 
-    /* show hamburger */
-    .menu-toggle {
-        display: block;
-        font-size: 28px;
-        cursor: pointer;
+    /* header spacing */
+    .header {
+        padding: 12px 15px;
     }
 
-    /* stack header nicely */
-    .header {
+    /* smaller logo */
+    .logo {
+        height: 45px;
+    }
+
+    /* NAVBAR – single line and clean */
+    .navbar {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
-    }
-
-    /* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
-
-    .header {
-        padding: 12px 15px;
-    }
-
-    .logo {
-        height: 45px;
-    }
-
-    /* keep navbar horizontal */
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 10px;
-        padding: 10px;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;      /* prevents cropping */
+        gap: 6px;
+        padding: 10px 5px;
     }
 
     .navbar a {
-        font-size: 14px;
+        font-size: 13px;
         white-space: nowrap;
     }
 
-    /* hide hamburger (not needed now) */
+    /* remove hamburger completely */
     .menu-toggle {
         display: none;
     }
-}
-/* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
 
-    .header {
-        padding: 12px 15px;
+    /* slideshow full width (no black sides) */
+    .slideshow {
+        height: auto;
     }
 
-    .logo {
-        height: 45px;
+    .slide {
+        height: auto;
+        object-fit: cover;
     }
-
-    /* keep navbar horizontal */
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 10px;
-        padding: 10px;
-        flex-wrap: nowrap;
-    }
-
-    .navbar a {
-        font-size: 14px;
-        white-space: nowrap;
-    }
-
-    /* hide hamburger (not needed now) */
-    .menu-toggle {
-        display: none;
-    }
-}
-/* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
-
-    .header {
-        padding: 12px 15px;
-    }
-
-    .logo {
-        height: 45px;
-    }
-
-    /* keep navbar horizontal */
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 10px;
-        padding: 10px;
-        flex-wrap: nowrap;
-    }
-
-    .navbar a {
-        font-size: 14px;
-        white-space: nowrap;
-    }
-
-    /* hide hamburger (not needed now) */
-    .menu-toggle {
-        display: none;
-    }
-}
-/* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
-
-    .header {
-        padding: 12px 15px;
-    }
-
-    .logo {
-        height: 45px;
-    }
-
-    /* keep navbar horizontal */
-    .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        gap: 10px;
-        padding: 10px;
-        flex-wrap: nowrap;
-    }
-
-    .navbar a {
-        font-size: 14px;
-        white-space: nowrap;
-    }
-
-    /* hide hamburger */
-    .menu-toggle {
-        display: none;
-    }
-}
 }
