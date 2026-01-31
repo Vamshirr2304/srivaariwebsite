@@ -225,6 +225,7 @@ video {
     object-fit: cover;   /* ✅ fill nicely for laptop */
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    background: white; /* white background for any gaps */
 }
 
 .slide.active {
@@ -243,6 +244,7 @@ video {
 
     .slide {
         object-fit: cover; /* fill completely - no black borders */
+        background: white; /* white background for any gaps */
     }
 
 }
