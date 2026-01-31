@@ -348,18 +348,149 @@ video::-webkit-media-controls-mute-button {
         align-items: center;
     }
 
-    /* hide navbar by default */
-    .navbar {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-        padding: 15px 0;
+    /* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 12px 15px;
     }
 
-    /* show when clicked */
-    .navbar.active {
-        display: flex;
+    .logo {
+        height: 45px;
     }
+
+    /* keep navbar horizontal */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* hide hamburger (not needed now) */
+    .menu-toggle {
+        display: none;
+    }
+}
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    /* keep navbar horizontal */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* hide hamburger (not needed now) */
+    .menu-toggle {
+        display: none;
+    }
+}
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    /* keep navbar horizontal */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* hide hamburger (not needed now) */
+    .menu-toggle {
+        display: none;
+    }
+}
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    /* keep navbar horizontal */
+   /* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 12px 15px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    /* keep navbar horizontal */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 10px;
+        padding: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* hide hamburger (not needed now) */
+    .menu-toggle {
+        display: none;
+    }
+}
+
+    /* hide hamburger (not needed now) */
+    .menu-toggle {
+        display: none;
+    }
+}
+
+
 }
 
