@@ -333,7 +333,7 @@ video::-webkit-media-controls-mute-button {
 /* ================= MOBILE ONLY ================= */
 @media (max-width: 768px) {
 
-    /* header spacing */
+    /* ---------------- HEADER ---------------- */
     .header {
         padding: 12px 15px;
     }
@@ -343,33 +343,55 @@ video::-webkit-media-controls-mute-button {
         height: 45px;
     }
 
-   /* ===== MOBILE NAVBAR (ONE LINE FIX) ===== */
+
+    /* ---------------- NAVBAR ---------------- */
     .navbar {
         display: flex;
-        justify-content: space-between; /* IMPORTANT */
+        justify-content: space-between;
         align-items: center;
-        padding: 10px 8px;              /* reduced padding */
-        gap: 0;                         /* remove extra gaps */
+        padding: 10px 8px;
+        gap: 0;
         flex-wrap: nowrap;
     }
 
     .navbar a {
-        font-size: 13px;                /* slightly smaller */
+        font-size: 13px;
         white-space: nowrap;
     }
 
-    /* remove hamburger completely */
+    /* remove hamburger */
     .menu-toggle {
         display: none;
     }
 
-    .slideshow {
-    height: auto !important;
-}
 
-.slide {
-    width: 100%;
-    height: auto !important;
-    object-fit: cover;
-}
+    /* ---------------- SLIDESHOW (FIXED) ---------------- */
+
+    /* prevent hiding behind navbar */
+    .slideshow {
+        width: 100%;
+        height: 65vh;          /* PERFECT mobile height */
+        overflow: hidden;
+        margin-top: 0;
+    }
+
+    /* each slide full screen */
+    .slide {
+        width: 100%;
+        height: 65vh;
+    }
+
+    /* image fills completely (NO BLACK BORDERS) */
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;     /* IMPORTANT */
+        display: block;
+    }
+
+
+    /* optional: smoother look */
+    .slide img {
+        border-radius: 0;
+    }
 }
